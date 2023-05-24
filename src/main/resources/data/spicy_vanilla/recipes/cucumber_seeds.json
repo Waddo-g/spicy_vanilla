@@ -1,0 +1,12 @@
+{
+  "type":"minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "spicy_vanilla:cucumber"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "spicy_vanilla:cucumber_seeds"
+  }
+}

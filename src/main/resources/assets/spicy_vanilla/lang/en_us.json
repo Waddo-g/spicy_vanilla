@@ -1,4 +1,6 @@
 {
-  "item.spicy_vanilla.cucumber_seed": "Cucumber seed",
-  "item.spicy_vanilla.cucumber": "Cucumber"
+  "item.spicy_vanilla.cucumber_seeds": "Cucumber seeds",
+  "item.spicy_vanilla.cucumber": "Cucumber",
+
+  "block.spicy_vanilla.cucumber_crop" : "Cucumber Crop"
 }

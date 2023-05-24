@@ -1,6 +1,8 @@
 package net.waddo.spicy_vanilla;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -9,6 +11,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.waddo.spicy_vanilla.block.ModBlocks;
 import net.waddo.spicy_vanilla.item.ModItems;
 import org.slf4j.Logger;
 
@@ -18,12 +21,13 @@ public class Spicy_vanilla
 {
     public static final String MOD_ID = "spicy_vanilla";
     private static final Logger LOGGER = LogUtils.getLogger();
-//here is a change
+
     public Spicy_vanilla()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

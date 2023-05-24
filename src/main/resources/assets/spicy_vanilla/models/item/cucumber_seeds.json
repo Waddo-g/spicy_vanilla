@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "spicy_vanilla:item/cucumber_seed"
+    "layer0": "spicy_vanilla:item/cucumber_seeds"
   }
 }
